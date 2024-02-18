@@ -1,0 +1,85 @@
+.texto{
+    font-family:Arial;
+}
+.subtitulos{
+    font-family:Arial, Helvetica, sans-serif
+}
+iframe{
+    width: 100%;
+}
+.caja{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    text-align: center;
+}
+.caja_informacion{
+    color: white;
+    background-color: orange;
+}
+.fondo, .clasex{
+    background-color: blue;
+}
+nav{
+    display: inline-block;
+    padding: 0px 20px;
+}
+a{
+    color: black;
+    text-decoration: black;
+}
+a:hover{
+    border: 1px solid #ffffff; /*anchura, estilo y color borde*/
+        padding: 10px; /*espacio alrededor texto*/
+        background-color: #10736b; /*color botón*/
+        color: #ffffff; /*color texto*/
+        font-family:Arial; /*tipografía texto*/
+        border-radius: 7px; /*bordes redondos*/
+    color:white;
+}
+.btn{    
+    
+    border: 1px solid #ffffff; /*anchura, estilo y color borde*/
+        padding: 10px; /*espacio alrededor texto*/
+        background-color: #000000; /*color botón*/
+        color: #ffffff; /*color texto*/
+        font-family:Arial; /*tipografía texto*/
+        border-radius: 0px; /*bordes redondos*/
+}
+.btn:hover{
+    border: 1px solid #ffffff; /*anchura, estilo y color borde*/
+        padding: 10px; /*espacio alrededor texto*/
+        background-color: #097154; /*color botón*/
+        color: #ffffff; /*color texto*/
+        font-family:Arial; /*tipografía texto*/
+        border-radius: 7px; /*bordes redondos*/
+    color:white;
+}
+menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+.titulo_producto{
+    color: white;
+    background-color: rgb(255, 0, 0);
+    font-family:Arial;
+}
+@media ( min-width : 768px ) and ( max-width : 1024px ){
+    .card__producto {
+        grid-template-columns: repeat( 2 , 1fr);
+        gap: 1.7rem;
+    }
+}
+@media ( min-width : 250px ) and ( max-width : 767px ){
+    .card__producto {
+       grid-template-columns: repeat( 1 , 1fr) ;
+       gap: 2rem;
+    }
+    .card__enlace{
+        padding: 2rem;
+    }
+}
